@@ -65,12 +65,6 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div id="sobre" className="about-strip section-anchor">
-        <div className="section-shell about-inner">
-          <span>Do problema à produção</span>
-          <p>{portfolio.about}</p>
-        </div>
-      </div>
     </section>
   );
 }

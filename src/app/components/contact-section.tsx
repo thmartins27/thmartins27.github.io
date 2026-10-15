@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { portfolio } from "@/data/portfolio";
 import { ArrowIcon, GithubIcon, LocationIcon, MailIcon } from "./icons";
 import { SectionLabel } from "./section-label";
@@ -54,16 +53,10 @@ export function ContactSection() {
           </address>
         </div>
 
-        <div className="contact-mark">
-          <Image
-            className="contact-portrait"
-            src="/images/thiago-martins.png"
-            alt="Retrato de Thiago Martins"
-            width={1122}
-            height={1402}
-            loading="eager"
-            sizes="(max-width: 640px) calc(100vw - 64px), (max-width: 1024px) 360px, 24vw"
-          />
+        <div className="contact-mark" aria-hidden="true">
+          <strong className="contact-monogram">
+            TM<span>.</span>
+          </strong>
           <i aria-hidden="true" />
         </div>
       </div>

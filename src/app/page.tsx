@@ -1,3 +1,4 @@
+import { AboutSection } from "./components/about-section";
 import { ContactSection } from "./components/contact-section";
 import { ExperienceSection } from "./components/experience-section";
 import { HeroSection } from "./components/hero-section";
@@ -7,6 +8,7 @@ export default function Page() {
   return (
     <main id="conteudo">
       <HeroSection />
+      <AboutSection />
       <ProjectsSection />
       <ExperienceSection />
       <ContactSection />

@@ -8,8 +8,8 @@ export function ExperienceSection() {
         <div className="experience-column">
           <SectionLabel index="02">Experiência</SectionLabel>
           <h2>
-            Experiência que
-            <br /> gera impacto<span>.</span>
+            Por trás dos
+            <br /> projetos<span>.</span>
           </h2>
 
           <div className="timeline">
@@ -18,11 +18,19 @@ export function ExperienceSection() {
               <span>{portfolio.experience.role}</span>
               <h3>{portfolio.experience.company}</h3>
               <p>{portfolio.experience.description}</p>
+              <strong className="timeline-highlights-label">
+                Eixos demonstrados nos projetos
+              </strong>
               <ul>
-                {portfolio.experience.highlights.map((highlight) => (
+                {portfolio.experience.highlights.map((highlight, index) => (
                   <li key={highlight.title}>
-                    <h4>{highlight.title}</h4>
-                    <p>{highlight.description}</p>
+                    <span className="timeline-highlight-index">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <div>
+                      <h4>{highlight.title}</h4>
+                      <p>{highlight.description}</p>
+                    </div>
                   </li>
                 ))}
               </ul>

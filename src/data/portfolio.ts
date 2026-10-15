@@ -6,8 +6,33 @@ export const portfolio = {
   headline: "Sistemas robustos. Resultados que importam.",
   description:
     "4 anos desenvolvendo aplicações corporativas, APIs e integrações com Node.js, TypeScript, React e Next.js.",
-  about:
-    "Atuo em todo o ciclo de desenvolvimento: entendo o problema, desenho a solução, construo interfaces e serviços, integro sistemas legados e acompanho a aplicação em produção.",
+  about: {
+    headline: ["Entender bem", "para resolver melhor"],
+    paragraphs: [
+      "Sou formado em Análise e Desenvolvimento de Sistemas pela UNIP e construí minha trajetória profissional a partir da curiosidade de entender como processos funcionam e como podem ser melhorados.",
+      "Tenho facilidade para analisar cenários, organizar problemas complexos e encontrar soluções claras e viáveis. Antes de tomar uma decisão, procuro compreender o contexto, as pessoas envolvidas e o impacto que aquela solução terá no dia a dia.",
+      "Valorizo responsabilidade, aprendizado contínuo e colaboração. Gosto de acompanhar meu trabalho de perto, aprender com os resultados e buscar melhorias que realmente façam diferença para as pessoas e para a operação.",
+    ],
+    strengthLabel: "O que orienta meu trabalho",
+    strengths: [
+      {
+        title: "Pensamento analítico",
+        description:
+          "Investigo o contexto e as causas do problema antes de definir uma solução.",
+      },
+      {
+        title: "Compromisso com o resultado",
+        description:
+          "Acompanho o trabalho até que a solução esteja funcionando e cumprindo seu objetivo.",
+      },
+      {
+        title: "Aprendizado contínuo",
+        description:
+          "Busco evoluir a partir de novos desafios, experiências e trocas com outras pessoas.",
+      },
+    ],
+    ctaLabel: "Conheça meus projetos",
+  },
   links: {
     github: "https://github.com/thmartins27",
     linkedin: "",
@@ -112,7 +137,7 @@ export const portfolio = {
     role: "Desenvolvedor Full Stack",
     company: "Hospital Adventista de Belém",
     description:
-      "Atuação em todo o ciclo de produtos corporativos: análise de requisitos, planejamento técnico, desenvolvimento, integração, implantação e sustentação.",
+      "Os projetos apresentados fazem parte de uma atuação de ponta a ponta: análise de requisitos, planejamento técnico, desenvolvimento, integração, implantação e sustentação.",
     highlights: [
       {
         title: "Impacto operacional",
@@ -120,9 +145,14 @@ export const portfolio = {
           "A plataforma de agendamento reduziu o tempo médio de 15 para 3 minutos e a fila do call center em pelo menos 30%.",
       },
       {
-        title: "Integrações críticas",
+        title: "Integrações clínicas",
         description:
-          "APIs, BFFs e serviços assíncronos conectando aplicações, ERP hospitalar, totens e sistemas legados.",
+          "Integrações com a DRG Brasil para análise de permanência e com parceiros de diagnóstico para troca de imagens, pedidos e laudos digitais.",
+      },
+      {
+        title: "Dados e operação",
+        description:
+          "Relatórios em Power BI e painéis React para planejamento, produtividade, giro de leitos, alertas assistenciais e rotinas financeiras.",
       },
       {
         title: "Produção e sustentação",
