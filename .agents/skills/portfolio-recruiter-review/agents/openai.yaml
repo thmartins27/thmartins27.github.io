@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revisor de Portfólio Tech"
+  short_description: "Analisa portfólios pela ótica de recrutamento"
+  default_prompt: "Use $portfolio-recruiter-review para avaliar meu portfólio como um recrutador técnico e priorizar melhorias."
