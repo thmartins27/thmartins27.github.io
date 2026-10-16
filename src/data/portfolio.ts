@@ -3,7 +3,7 @@ export const portfolio = {
   initials: "TM",
   role: "Desenvolvedor Full Stack",
   location: "Belém, PA · Brasil",
-  headline: "Sistemas robustos. Resultados que importam.",
+  headline: "Onde há desafios. Eu enxergo possibilidades.",
   description:
     "4 anos desenvolvendo aplicações corporativas, APIs e integrações com Node.js, TypeScript, React e Next.js.",
   about: {
@@ -35,7 +35,10 @@ export const portfolio = {
   },
   links: {
     github: "https://github.com/thmartins27",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/th-martins27/",
+    instagram: "https://www.instagram.com/th.martins27/",
+    whatsapp:
+      "https://wa.me/5591989629402?text=Ol%C3%A1%2C%20Thiago!%20Encontrei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade.",
     email: "thiago.olivmartins@gmail.com",
   },
   featuredProject: {

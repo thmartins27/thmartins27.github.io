@@ -8,7 +8,7 @@ export function AboutSection() {
   return (
     <section id="sobre" className="about section-anchor">
       <div className="section-shell about-grid">
-        <div className="about-portrait-frame">
+        <div className="about-portrait-frame" data-reveal="left">
           <Image
             className="about-portrait"
             src="/images/thiago-martins.png"
@@ -20,7 +20,7 @@ export function AboutSection() {
           />
         </div>
 
-        <div className="about-content">
+        <div className="about-content" data-reveal="right" data-reveal-delay="1">
           <SectionLabel index="00">Sobre mim</SectionLabel>
           <h2>
             {portfolio.about.headline.map((line, index) => (

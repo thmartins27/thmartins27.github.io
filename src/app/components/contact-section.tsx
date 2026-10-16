@@ -1,12 +1,41 @@
 import { portfolio } from "@/data/portfolio";
-import { ArrowIcon, GithubIcon, LocationIcon, MailIcon } from "./icons";
+import {
+  ArrowIcon,
+  GithubIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  LocationIcon,
+  MailIcon,
+  WhatsappIcon,
+} from "./icons";
 import { SectionLabel } from "./section-label";
+
+const contactChannels = [
+  {
+    label: "LinkedIn",
+    handle: "/in/th-martins27",
+    href: portfolio.links.linkedin,
+    icon: LinkedinIcon,
+  },
+  {
+    label: "Instagram",
+    handle: "@th.martins27",
+    href: portfolio.links.instagram,
+    icon: InstagramIcon,
+  },
+  {
+    label: "WhatsApp",
+    handle: "Iniciar uma conversa",
+    href: portfolio.links.whatsapp,
+    icon: WhatsappIcon,
+  },
+];
 
 export function ContactSection() {
   return (
     <section id="contato" className="contact section-anchor">
       <div className="section-shell contact-grid">
-        <div className="contact-copy">
+        <div className="contact-copy" data-reveal="left">
           <SectionLabel index="04">Vamos conversar</SectionLabel>
           <h2>
             Vamos construir
@@ -29,16 +58,6 @@ export function ContactSection() {
             >
               GitHub <ArrowIcon />
             </a>
-            {portfolio.links.linkedin ? (
-              <a
-                className="text-link"
-                href={portfolio.links.linkedin}
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn <ArrowIcon />
-              </a>
-            ) : null}
           </div>
 
           <address className="contact-details">
@@ -53,11 +72,39 @@ export function ContactSection() {
           </address>
         </div>
 
-        <div className="contact-mark" aria-hidden="true">
-          <strong className="contact-monogram">
-            TM<span>.</span>
-          </strong>
-          <i aria-hidden="true" />
+        <div className="contact-channels" data-reveal="right" data-reveal-delay="1">
+          <div className="contact-channels-heading">
+            <span>Outros canais</span>
+            <h3>
+              Escolha como prefere <strong>conversar.</strong>
+            </h3>
+          </div>
+
+          <ul className="contact-channel-list">
+            {contactChannels.map((channel) => {
+              const Icon = channel.icon;
+
+              return (
+                <li key={channel.label}>
+                  <a
+                    href={channel.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Acessar ${channel.label} de Thiago Martins`}
+                  >
+                    <span className="contact-channel-icon">
+                      <Icon />
+                    </span>
+                    <span className="contact-channel-copy">
+                      <strong>{channel.label}</strong>
+                      <small>{channel.handle}</small>
+                    </span>
+                    <ArrowIcon className="contact-channel-arrow" />
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
 

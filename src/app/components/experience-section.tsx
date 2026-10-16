@@ -5,7 +5,7 @@ export function ExperienceSection() {
   return (
     <section id="experiencia" className="experience section-anchor">
       <div className="section-shell experience-grid">
-        <div className="experience-column">
+        <div className="experience-column" data-reveal="left">
           <SectionLabel index="02">Experiência</SectionLabel>
           <h2>
             Por trás dos
@@ -38,7 +38,11 @@ export function ExperienceSection() {
           </div>
         </div>
 
-        <div className="capabilities-column">
+        <div
+          className="capabilities-column"
+          data-reveal="right"
+          data-reveal-delay="1"
+        >
           <span className="capabilities-intro">Tecnologias</span>
           <h2>
             Stack aplicada
@@ -69,7 +73,7 @@ export function ExperienceSection() {
       </div>
 
       <div className="education-bar">
-        <div className="section-shell">
+        <div className="section-shell" data-reveal="up">
           <SectionLabel index="03">Formação</SectionLabel>
           <p>{portfolio.education}</p>
         </div>

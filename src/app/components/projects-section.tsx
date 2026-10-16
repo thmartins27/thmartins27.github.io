@@ -6,7 +6,7 @@ export function ProjectsSection() {
   return (
     <section id="projetos" className="projects section-anchor">
       <div className="section-shell">
-        <div className="section-heading">
+        <div className="section-heading" data-reveal="up">
           <div>
             <SectionLabel index="01">Projetos</SectionLabel>
             <h2>
@@ -21,7 +21,7 @@ export function ProjectsSection() {
         </div>
 
         <article className="featured-project">
-          <div className="featured-project-copy">
+          <div className="featured-project-copy" data-reveal="left">
             <span className="project-index">01 / Projeto em destaque</span>
             <h3>
               {portfolio.featuredProject.title}
@@ -69,7 +69,7 @@ export function ProjectsSection() {
             </div>
           </div>
 
-          <div className="project-system">
+          <div className="project-system" data-reveal="right" data-reveal-delay="1">
             <span className="project-index">Desafios e soluções</span>
             <ol className="project-challenges">
               {portfolio.featuredProject.challenges.map((challenge, index) => (
@@ -97,7 +97,7 @@ export function ProjectsSection() {
 
         <div className="project-list">
           {portfolio.projects.map((project) => (
-            <article className="project-row" key={project.title}>
+            <article className="project-row" key={project.title} data-reveal="up">
               <div className="project-row-copy">
                 <div className="project-row-label">
                   <span>{project.index}</span>
