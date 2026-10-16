@@ -48,6 +48,7 @@ export const portfolio = {
     responsibilities: [
       "Análise de requisitos e planejamento técnico.",
       "Desenvolvimento da interface, APIs e integrações.",
+      "Testes automatizados com Jest nas APIs e interfaces.",
       "Implantação e sustentação da aplicação em produção.",
     ],
     challenges: [
@@ -90,11 +91,11 @@ export const portfolio = {
       index: "02",
       eyebrow: "Integrações clínicas",
       detailLabel: "Casos de integração",
-      title: "Integrações clínicas e hospitalares",
+      title: "Integrações hospitalares e clínicas",
       description:
-        "Integrações entre sistemas internos e plataformas especializadas para apoiar a gestão de internações e o fluxo digital de exames e laudos.",
+        "Aplicações e integrações entre sistemas internos e plataformas especializadas para apoiar internações, diagnósticos e controle de acesso.",
       contribution:
-        "Desenvolvimento e sustentação dos fluxos de integração entre sistemas internos e parceiros externos.",
+        "Desenvolvimento e sustentação de aplicações, fluxos de integração e mecanismos de rastreabilidade entre sistemas internos e parceiros externos.",
       cases: [
         {
           label: "DRG Brasil",
@@ -103,10 +104,16 @@ export const portfolio = {
             "Dados de internação e CID para apoiar análises de permanência, previsão de alta e giro de leitos.",
         },
         {
-          label: "Laudos digitais",
+          label: "PHP · Laravel",
           title: "Exames de imagem",
           description:
-            "Envio de imagens e pedidos ao parceiro responsável e recebimento do laudo assinado digitalmente.",
+            "Aplicação em Laravel para envio de imagens e pedidos, recebimento de laudos assinados digitalmente e testes automatizados com Pest e PHPUnit.",
+        },
+        {
+          label: "MongoDB · Logs",
+          title: "Totens e acesso",
+          description:
+            "Logs da integração entre totens, ERP hospitalar e catracas com reconhecimento facial para rastrear fluxos e investigar falhas.",
         },
       ],
     },
@@ -135,6 +142,44 @@ export const portfolio = {
       ],
     },
   ],
+  authorProjects: {
+    eyebrow: "Projetos autorais",
+    title: "Tecnologia em evolução contínua",
+    description:
+      "Produtos e desafios onde valido ideias, aprofundo novas tecnologias e transformo necessidades reais em soluções próprias.",
+    items: [
+      {
+        index: "A01",
+        status: "IA aplicada ao desenvolvimento",
+        title: "PlantUML Studio",
+        description:
+          "Ferramenta criada para escrever, visualizar e organizar diagramas PlantUML durante a documentação de sistemas.",
+        evidence:
+          "Nasceu da necessidade de documentar a arquitetura da nova plataforma de agendamento. Utilizei agentes de IA para explorar soluções, acelerar a implementação e revisar decisões, mantendo sob minha responsabilidade o escopo, a arquitetura e a validação do produto.",
+        technologies: ["PlantUML", "Agentes de IA", "Documentação técnica"],
+      },
+      {
+        index: "A02",
+        status: "Em desenvolvimento",
+        title: "Nova plataforma de agendamento",
+        description:
+          "Projeto pessoal com o back-end desenvolvido em .NET e C#, criado para aprofundar minha experiência no ecossistema por meio de uma aplicação completa.",
+        evidence:
+          "A estrutura prioriza separação de responsabilidades, regras de negócio independentes da infraestrutura e testes automatizados com xUnit.",
+        technologies: [".NET", "C#", "xUnit", "Clean Architecture", "SOLID"],
+      },
+      {
+        index: "A03",
+        status: "Desafio técnico",
+        title: "Controle de estoque",
+        description:
+          "Aplicação pública de controle de estoque desenvolvida para um processo seletivo e utilizada pelos avaliadores durante a análise técnica.",
+        evidence:
+          "O projeto foi estruturado para demonstrar testes automatizados com xUnit, Clean Architecture e princípios SOLID aplicados em .NET e C#.",
+        technologies: [".NET", "C#", "xUnit", "Clean Architecture", "SOLID"],
+      },
+    ],
+  },
   experience: {
     period: "Jan 2022 — Ago 2026",
     role: "Desenvolvedor Full Stack",
@@ -150,7 +195,12 @@ export const portfolio = {
       {
         title: "Integrações clínicas",
         description:
-          "Integrações com a DRG Brasil para análise de permanência e com parceiros de diagnóstico para troca de imagens, pedidos e laudos digitais.",
+          "Integrações com a DRG Brasil e desenvolvimento em PHP e Laravel para a troca de imagens, pedidos e laudos digitais com parceiros de diagnóstico.",
+      },
+      {
+        title: "Rastreabilidade operacional",
+        description:
+          "MongoDB aplicado aos logs da integração entre totens, ERP hospitalar e catracas com reconhecimento facial.",
       },
       {
         title: "Dados e operação",
@@ -169,7 +219,14 @@ export const portfolio = {
       index: "01",
       title: "Back-end",
       description: "APIs REST, BFFs, regras de negócio e integrações com sistemas legados.",
-      technologies: ["Node.js", "TypeScript", "NestJS", "Swagger/OpenAPI"],
+      technologies: [
+        "Node.js",
+        "TypeScript",
+        "NestJS",
+        "PHP",
+        "Laravel",
+        "Swagger/OpenAPI",
+      ],
     },
     {
       index: "02",
@@ -179,15 +236,29 @@ export const portfolio = {
     },
     {
       index: "03",
-      title: "Dados",
-      description: "Consultas, modelagem e persistência em diferentes bancos relacionais.",
-      technologies: ["Oracle", "PostgreSQL", "MySQL", "Redis"],
+      title: "Dados e persistência",
+      description: "Bancos relacionais, cache e armazenamento de logs operacionais.",
+      technologies: ["Oracle", "PostgreSQL", "MySQL", "MongoDB", "Redis"],
     },
     {
       index: "04",
       title: "DevOps",
       description: "Deploy e sustentação em Linux com containers, proxy reverso, logs e auditoria.",
       technologies: ["Docker", "Nginx", "Linux", "Git"],
+    },
+    {
+      index: "05",
+      title: "Arquitetura e testes",
+      description:
+        "Separação de responsabilidades, princípios SOLID e testes automatizados adequados a cada ecossistema.",
+      technologies: [
+        "Clean Architecture",
+        "SOLID",
+        "Jest",
+        "xUnit",
+        "Pest",
+        "PHPUnit",
+      ],
     },
   ],
   education: "Graduação concluída em Análise e Desenvolvimento de Sistemas · UNIP",

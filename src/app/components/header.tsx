@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 const navigation = [
@@ -29,7 +30,16 @@ export function Header() {
     <header className="site-header">
       <nav aria-label="Navegação principal" className="header-inner">
         <a href="#inicio" className="brand" aria-label="Thiago Martins — início">
-          TM<span>.</span>
+          <span className="brand-avatar" aria-hidden="true">
+            <Image
+              src="/images/thiago-martins-avatar.png"
+              alt=""
+              width={44}
+              height={44}
+              loading="eager"
+            />
+          </span>
+          <span className="brand-name">Thiago Martins</span>
         </a>
 
         <ul className="desktop-navigation">

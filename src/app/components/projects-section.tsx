@@ -1,6 +1,7 @@
 import { portfolio } from "@/data/portfolio";
 import { ArrowIcon } from "./icons";
 import { SectionLabel } from "./section-label";
+import styles from "./projects-section.module.css";
 
 export function ProjectsSection() {
   return (
@@ -112,7 +113,9 @@ export function ProjectsSection() {
               </div>
               <div className="project-row-details">
                 <span className="project-index">{project.detailLabel}</span>
-                <div className="project-case-list">
+                <div
+                  className={`project-case-list${project.cases.length > 2 ? ` ${styles.caseListWide}` : ""}`}
+                >
                   {project.cases.map((projectCase) => (
                     <div className="project-case" key={projectCase.title}>
                       <span>{projectCase.label}</span>
@@ -132,6 +135,51 @@ export function ProjectsSection() {
               </div>
             </article>
           ))}
+        </div>
+
+        <div className={styles.authorProjects} data-reveal="up">
+          <div className={styles.authorProjectsHeading}>
+            <div>
+              <span className="project-index">
+                {portfolio.authorProjects.eyebrow}
+              </span>
+              <h3>
+                {portfolio.authorProjects.title}
+                <span>.</span>
+              </h3>
+            </div>
+            <div>
+              <p>{portfolio.authorProjects.description}</p>
+              <a
+                className={styles.authorProjectsLink}
+                href={portfolio.links.github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ver projetos no GitHub
+                <ArrowIcon />
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.authorProjectGrid}>
+            {portfolio.authorProjects.items.map((project) => (
+              <article className={styles.authorProjectCard} key={project.title}>
+                <div className={styles.authorProjectMeta}>
+                  <span>{project.index}</span>
+                  <strong>{project.status}</strong>
+                </div>
+                <h4>{project.title}</h4>
+                <p>{project.description}</p>
+                <p className={styles.authorProjectEvidence}>{project.evidence}</p>
+                <ul aria-label={`Tecnologias e práticas de ${project.title}`}>
+                  {project.technologies.map((technology) => (
+                    <li key={technology}>{technology}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

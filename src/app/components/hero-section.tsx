@@ -41,12 +41,30 @@ export function HeroSection() {
             </div>
             <pre>
               <code>
-                <span className="code-muted">01</span> <b>const</b> developer = &#123;{"\n"}
-                <span className="code-muted">02</span> {"  "}focus: <em>&quot;impacto&quot;</em>,{"\n"}
-                <span className="code-muted">03</span> {"  "}stack: [<em>&quot;Node.js&quot;</em>,{"\n"}
-                <span className="code-muted">04</span> {"    "}<em>&quot;React&quot;</em>, <em>&quot;Next.js&quot;</em>],{"\n"}
-                <span className="code-muted">05</span> {"  "}delivery: <em>&quot;produção&quot;</em>{"\n"}
-                <span className="code-muted">06</span> &#125;;
+                <span className="code-line">
+                  <span className="code-muted">01</span>
+                  <span className="code-line-text"> <b>const</b> developer = &#123;</span>
+                </span>
+                <span className="code-line">
+                  <span className="code-muted">02</span>
+                  <span className="code-line-text"> {"  "}focus: <em>&quot;impacto&quot;</em>,</span>
+                </span>
+                <span className="code-line">
+                  <span className="code-muted">03</span>
+                  <span className="code-line-text"> {"  "}stack: [<em>&quot;Node.js&quot;</em>,</span>
+                </span>
+                <span className="code-line">
+                  <span className="code-muted">04</span>
+                  <span className="code-line-text"> {"    "}<em>&quot;React&quot;</em>, <em>&quot;Next.js&quot;</em>],</span>
+                </span>
+                <span className="code-line">
+                  <span className="code-muted">05</span>
+                  <span className="code-line-text"> {"  "}delivery: <em>&quot;produção&quot;</em></span>
+                </span>
+                <span className="code-line">
+                  <span className="code-muted">06</span>
+                  <span className="code-line-text"> &#125;;</span>
+                </span>
               </code>
             </pre>
             <div className="system-steps">
